@@ -1,0 +1,61 @@
+@charset "utf-8";
+#webDate{
+	max-width:1280px;
+	padding:0 40px;
+	margin:0 auto;
+}
+#webDate .webDate-list{
+	margin:90px 0;
+	width:auto;
+}
+#webDate .webDate-list li:last-child{
+	text-align:right;
+}
+#webDate .webDate-list li span{
+	line-height:36px;
+}
+#webDate .webDate-freLink{
+	overflow:hidden;
+	padding:10px 0;
+	margin-bottom:40px;
+	border-top:1px solid #DBDBDB;
+	border-bottom:1px solid #DBDBDB;
+	color:#92B7FF;
+}
+#webDate .webDate-freLink li{
+	float:left;
+	padding:0 10px;
+	font-size:14px;
+	line-height:1.5;
+}
+#webDate .webDate-freLink li a{
+	color:#92B7FF;
+}
+/*width>992*/
+@media screen and (min-width:992px){
+	#webDate .webDate-list{
+		display:flex;
+	}
+	#webDate .webDate-list li:first-child{
+		width:25%;
+	}
+	#webDate .webDate-list li:nth-child(2){
+		width:45%;
+		min-width:440px;
+	}
+	#webDate .webDate-list li:last-child{
+		width:30%;
+	}
+}
+/*width<992*/
+@media screen and (max-width:992px){
+	#webDate .webDate-list li{
+		width:100%;
+	}
+	#webDate .webDate-list li:first-child{
+		padding-bottom:30px;
+	}
+	#webDate .webDate-list li:nth-child(2){
+		padding-bottom:40px;
+	}
+}

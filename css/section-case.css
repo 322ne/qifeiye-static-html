@@ -1,0 +1,74 @@
+@charset "utf-8";
+#case{
+	width:auto;
+	padding:20px 40px;
+	background-color:#F9F9F9;
+}
+#case .case-info{
+	min-height:150px;
+	padding:0 40px;
+	margin:140px 0 80px;
+	text-align:center;
+}
+#case .case-info .case-info-title{
+	display:block;
+	padding:40px 0;
+	margin-top:80px;
+	font-size:36px;
+	font-weight:normal;
+}
+#case .case-info .case-info-desc{
+	font-family:"微软雅黑";
+	font-size:15px;
+	color:#808083;
+}
+#case ul{
+	display:flex;
+	justify-content:space-around;
+}
+#case ul .case-list a{
+	display:inline-block;
+}
+#case ul .case-list a img{
+	width:100%;
+}
+#case .case-more{
+	margin-bottom:100px;
+	text-align:center;
+}
+#case .case-more a{
+	display:inline-block;
+	padding:8px 50px;
+	color:#fff;
+	background-color:#61B0FF;
+	border-radius:20px;
+}
+#case .case-more a .iconfont{
+	padding-left:10px;
+	vertical-align:middle;
+}
+#case .case-more a:hover{
+	background-color:#3EA3FF;
+}
+/*width>992*/
+@media screen and (min-width:992px){
+	#case ul{
+		flex-direction:row;
+	}
+	#case ul .case-list{
+		width:33%;
+	}
+}
+/*width<992*/
+@media screen and (max-width:992px){
+	#case ul{
+		flex-direction:column;
+	}
+	#case ul .case-list a{
+		width:60%;
+		margin:0 20%;
+	}
+	#case ul .case-list{
+		width:100%;
+	}
+}

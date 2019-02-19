@@ -1,0 +1,123 @@
+@charset "utf-8";
+/*width>992*/
+@media screen and (min-width:992px){
+	#cosReview{
+		width:auto;
+	}
+	/*info*/
+	#cosReview .cosReview-info{
+		min-height:150px;
+		max-width:934px;
+		padding:80px 0;
+		margin:0 auto;
+		text-align:center;
+	}
+	#cosReview .cosReview-info .cosReview-info-title{
+		display:block;
+		padding:40px 0 30px;
+		color:#393939;
+		font-size:36px;
+		font-weight:normal;
+	}
+	#cosReview .cosReview-info .cosReview-info-desc{
+		font-family:"微软雅黑";
+		font-size:15px;
+		color:#808080;
+	}
+	/*customer*/
+	#cosReview > ul{
+		max-width:1090px;
+		margin:0 auto;
+	}
+	#cosReview > ul .cosReview-customer{
+		display:flex;
+		flex-direction:row;
+		justify-content:space-around;
+	}
+	#cosReview .cosReview-customer-item img{
+		filter:grayscale(100%);
+		transition:.5s;
+	}
+	#cosReview .cosReview-customer-item a:hover img{
+		filter:grayscale(0);
+	}
+	/*review*/
+	#cosReview .cosReview-review{
+		overflow:hidden;
+		position:relative;
+		max-width:1090px;
+		padding:0 40px;
+		margin:80px auto;
+	}
+	#cosReview .cosReview-review > ul{
+		width:300%;
+		height:180px;
+	}
+	#cosReview .cosReview-review  > ul .cosReview-review-item{
+		display:flex;
+		flex-direction:row;
+		float:left;
+		width:33.3%;
+	}
+	#cosReview .cosReview-review .cosReview-review-item-pic{
+		padding:15px 50px 30px;
+	}
+	#cosReview .cosReview-review .cosReview-review-item-info{
+		position:relative;
+		max-width:783px;
+		padding:15px 0;
+		min-height:109px;
+		margin:0 auto;
+	}
+	#cosReview .cosReview-review .cosReview-review-item-info span:first-child{
+		font-size:13px;
+		line-height:1.8;
+		color:#A9A9A9;
+	}
+	#cosReview .cosReview-review .cosReview-review-item-info span:last-child{
+		position:absolute;
+		right:0;
+		bottom:16px;
+	}
+	#cosReview .cosReview-review > div{
+		position:absolute;
+		height:100%;
+	}
+	#cosReview .cosReview-review .cosReview-review-leftarrow{
+		left:10px;
+	}
+	#cosReview .cosReview-review .cosReview-review-rightarrow{
+		right:10px;
+	}
+	#cosReview .cosReview-review > div a{
+		display:inline-block;
+		padding:5px;
+		margin:74px 0;
+		background-color:#ccc;
+	}
+	#cosReview .cosReview-review .cosReview-review-circle{
+		position:absolute;
+		bottom:0;
+		left:50%;
+		margin-left:-17px;
+	}
+	#cosReview .cosReview-review .cosReview-review-circle span{
+		display:inline-block;
+		width:8px;
+		height:8px;
+		border-radius:4px;
+		background-color:#ccc;
+	}
+	#cosReview .cosReview-review .cosReview-review-circle span:first-child{
+		background-color:#5FB0FF;
+	}
+}
+/*width<992*/
+@media screen and (max-width:992px){
+	#cosReview{
+		display:none;
+	}
+}
+
+
+

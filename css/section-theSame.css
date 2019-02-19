@@ -1,0 +1,88 @@
+@charset "utf-8";
+.theSame{
+	overflow:hidden;
+	position:relative;
+	width:auto;
+	padding:50px 40px 80px;
+}
+.theSame .theSame-pic{
+	position: relative;
+	max-width:100%;
+	min-height:1px;
+}
+.theSame .theSame-pic img{
+	width:100%;
+}
+.theSame .theSame-info{
+	position:relative;
+	top:50%;
+	max-width:100%;
+	min-height:1px;
+	opacity:0;
+}
+.theSame .theSame-info > div{
+	overflow:hidden;
+	max-width:500px;
+	margin:0 auto;
+}
+.theSame .theSame-info > div span{
+	display:inline-block;
+	margin:20px 0;
+	font-size: 40px;
+    font-weight: 100;
+    font-style: normal;
+}
+.theSame .theSame-info > div h1{
+	font-weight:normal;
+	font-size:15px;
+	line-height:2em;
+	letter-spacing:1px;
+	color:rgb(105,105,105);;
+}
+#createWeb,#serviceNetDeploy{
+	background-color:#F9F9F9;
+}
+/*初始位置和状态*/
+.theSame .createWeb-pic,.theSame .serviceNetDeploy-pic{
+	left:-30%;
+	opacity:0;
+}
+.theSame .selfSetWeb-pic,.theSame .SEO-pic{
+	left:30%;
+	opacity:0;
+}
+
+/*��������*/
+.createWeb-info-box span,.serviceNetDeploy-info-box span{
+	color: #333333;
+}
+.selfSetWeb-info-box span,.SEO-info-box span{
+    color: #3EA3FF;
+}
+/*width>992*/
+@media screen and (min-width:992px){
+    .theSame .theSame-pic{
+		width:50%;
+		margin-top:30px;
+	}
+	.theSame .theSame-info{
+		width:50%;
+		margin-top:70px;
+	}
+	.theSame .createWeb-pic,.theSame .createWeb-info,.theSame .serviceNetDeploy-pic,.theSame .serviceNetDeploy-info{
+	    float:left;
+	}
+	.theSame .selfSetWeb-pic,.theSame .selfSetWeb-info,.theSame .SEO-pic,.theSame .SEO-info{
+	    float:right;
+	}
+}
+/*width<992*/
+@media screen and (max-width:992px){
+	.theSame .theSame-pic{
+		width:80%;
+		margin:0 auto;
+	}
+	.theSame .theSame-info{
+		width:100%;
+	}
+}

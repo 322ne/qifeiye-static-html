@@ -1,0 +1,27 @@
+@charset "utf-8";
+#desc{
+	width:auto !important;
+	text-align:center;
+}
+#desc .desc-pd{
+	position:relative;
+	padding:92px 45px 67px 45px;
+}
+#desc .desc-pd .desc-pd-box{
+	display:inline-block;
+	position:relative;
+	top:-50%;
+	min-width:100%;
+	opacity:0;
+	color:#373a41;
+}
+#desc .desc-pd .desc-pd-box .desc-pd-box-title{
+    display:inline-block;
+	padding-bottom:20px;
+	font-size:56px;
+	font-weight:200;
+}
+#desc .desc-pd .desc-pd-box .desc-pd-box-info{
+    font-size:20px;
+	font-weight:normal;
+}
